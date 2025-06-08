@@ -1,5 +1,5 @@
 const allowedOrigins = [
-  "https://spctmo.vercel.app",
+  "https://ctmo-demo.vercel.app",
   "https://vercel.com",
   "http://localhost:5173",
 ];
