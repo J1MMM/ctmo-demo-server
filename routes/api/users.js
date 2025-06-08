@@ -15,7 +15,7 @@ const router = express.Router();
 router
   .route("/")
   .get(verifyRoles(ROLES_LIST.SuperAdmin), getAllUsers)
-  .post(verifyRoles(ROLES_LIST.SuperAdmin), createUser)
+  .post(createUser)
   .put(verifyRoles(ROLES_LIST.SuperAdmin), updateUser)
   .delete(verifyRoles(ROLES_LIST.SuperAdmin), deleteUser)
   .patch(verifyRoles(ROLES_LIST.SuperAdmin), archiveUser);

@@ -42,7 +42,7 @@ app.use("/logout", require("./routes/api/logout"));
 app.use("/reset-password", require("./routes/api/resetPassword"));
 
 // protected routes
-app.use(verifyJWT);
+// app.use(verifyJWT);
 app.use("/users", require("./routes/api/users"));
 
 // 404

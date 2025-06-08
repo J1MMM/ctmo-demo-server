@@ -28,6 +28,8 @@ const checkEmailDuplication = async (req, res) => {
 };
 
 const createUser = async (req, res) => {
+  console.log("sdfg");
+
   const accountDetails = req.body;
   if (!accountDetails)
     return res.status(400).json({ message: "All fields are required" });
